@@ -1,0 +1,418 @@
+<style>
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: center;
+}
+
+h1 {
+  color: #d81b60;
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+}
+
+.fruit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fruit-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+.fruit-card:hover {
+  transform: scale(1.05);
+}
+
+.fruit-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.fruit-card button {
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.fruit-card button:hover {
+  background-color: #ad1457;
+}</style>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>فروشگاه میوه</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=".vscode/botstrap/bootstrap.rtl.min.css">
+</head>
+<body>
+  <h1>🍎 فروشگاه آنلاین میوه 🍇</h1>
+
+  <div class="fruit-grid">
+
+    <div class="fruit-card">
+      <img src="سیب/images.png" alt="سیب">
+      <button>سیب</button>
+
+    </div>
+      <div class="fruit-card">
+      <img src="lili/photo_2025-06-29_14-26-20.png" alt="خربزه">
+      <button>خربزه</button>
+    </div>
+
+
+    <div class="fruit-card">
+      <img src="موز/images.png" alt="موز">
+      <button>موز</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="انگور/images.png" alt="انگور">
+      <button>انگور</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="پرتقال/images.png" alt="پرتقال">
+      <button>پرتقال</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="هندوانه/images.png" alt="هندوانه">
+      <button>هندوانه</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="گیلاس/images.png" alt="گیلاس">
+      <button>گیلاس</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="کیوی/images.png" alt="کیوی">
+      <button>کیوی</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="هلو/602cbeb3ec581.png" alt="هلو">
+      <button>هلو</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="اناناس/371782_167.png" alt="آناناس">
+      <button>آناناس</button>
+    </div>
+
+    <div class="fruit-card">
+      <img src="توت فرنگی/images.png" alt="توت فرنگی">
+      <button>توت فرنگی</button>
+    </div>
+
+    <!-- ادامه میوه‌ها اینجا اضافه میشه -->
+
+  </div>
+</body>
+</html>
+<style>
+/* ریست اولیه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* فونت و رنگ کلی سایت */
+body {
+    font-family: "Tahoma", "Vazir", sans-serif;
+    background: linear-gradient(to left,#12ef06,#06d3f77e )
+    line-height:1.8;
+    direction:rtl;
+}
+
+/* سربرگ */
+header {
+    background: linear-gradient(to left, #89df8d, #f906c4);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #e6ee01;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* گالری عکس و ویدئو */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: rgb(147, 147, 147);
+}
+
+.gallery img, .gallery video {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 16px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(193, 6, 6, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover, .gallery video:hover {
+    transform: scale(1.02);
+}
+
+/* بخش توضیحات */
+.info {
+    padding: 40px 20px;
+    background: #f5910f;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #ed189f;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info h3 {
+    color: #06e711;
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+.info p {
+    font-size: 1.05rem;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* فوتر */
+footer {
+    background: #76e97d;
+    color: rgb(21, 134, 182);
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+/* واکنش‌گرایی موبایل */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery img, .gallery video {
+        width: 100%;
+    }
+
+    .info h2 {
+        font-size: 1.6rem;
+    }
+
+    .info h3 {
+        font-size: 1.1rem;
+    }
+
+    .info p {
+        font-size: 0.95rem;
+    }
+}
+</style>
+<body>
+    <!-- بخش اول: معرفی و گالری -->
+    <header>
+        <h1>میدان تره‌بار مرکزی</h1>
+        <p>فروش میوه و تره‌بار تازه به صورت عمده و خرده، با قیمت رقابتی و کیفیت بالا</p>
+    </header>
+
+    <section class="gallery">
+        <img src="lili/photo_2025-06-23_14-43-33.png" alt="تصویر میدان">
+            عکس از بار فروش 
+            
+        </video>
+    </section>
+            <a href="salar.html" target="_blank" ><button type="button">form</button></a>	
+             	<div class="container"></div>
+		                   <div class="row"></div>
+				                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2"></div>
+											<table class="table table-bordered table-striped table-hover">
+              <tbody>
+                  <tr>
+
+                            <td>سیب</td>
+                            <td>20000</td>
+   
+                  </tr>
+                  <tr>
+                      <td>خربزه</td>
+                      <td>34000</td>
+
+
+
+
+
+                  </tr>
+                  <tr>
+
+                        <td>موز</td>
+                        <td>30000</td>
+
+
+
+                 </tr>
+                  <tr>
+                          <td>انگور</td>
+                          <td>40000</td>
+
+
+
+
+                  </tr>
+                  <tr>
+                        <td>پرتقال</td>
+                        <td>25000</td>
+                  </tr>
+<tr>
+
+<td>هندوانه</td>
+
+<td>30000</td>
+
+
+</tr>
+<tr>
+
+<td>گیلاس</td>
+
+<td>5000</td>
+
+
+</tr>
+<tr>
+
+<td>کیوی</td>
+
+<td>25000</td>
+
+
+</tr>
+<tr>
+
+<td>هلو</td>
+
+<td>65000</td>
+
+
+</tr>
+<tr>
+
+<td>اناناس</td>
+
+<td>90000</td>
+
+
+</tr>
+<tr>
+
+<td>توت فرنگی</td>
+
+<td>80000</td>
+
+
+</tr>
+<thead>
+<tr>
+<th>میوه ها</th>
+<th>قیمت</th>
+</tr>
+
+
+
+
+</thead>
+
+              </tbody>
+            </table>
+    <!-- بخش دوم: معرفی کامل میوه‌ها و توضیحات -->
+    <section class="info">
+        <h2>میوه‌های تازه با کیفیت عالی</h2>
+        <p>
+            ما در میدان تره‌بار مرکزی، بهترین و تازه‌ترین میوه‌ها را مستقیماً از باغداران معتبر سراسر کشور تهیه و با قیمت مناسب عرضه می‌کنیم.
+        </p>
+
+        <h3>🍎 سیب</h3>
+        <p>
+            سیب‌های ما از باغ‌های سردسیر ایران مانند ارومیه و سمیرم تهیه می‌شوند. طعم شیرین، پوست براق و بدون لکه، و ماندگاری بالا از ویژگی‌های سیب‌های ماست. سرشار از فیبر، آنتی‌اکسیدان، مفید برای قلب و کنترل قند خون.
+        </p>
+
+        <h3>🍌 موز</h3>
+        <p>
+            موز وارداتی از آمریکای جنوبی و هندوستان، رسیده، بدون لک، و با طعمی شیرین. مناسب برای فروشگاه‌ها، کافه‌ها و حتی بیمارستان‌ها. منبع عالی پتاسیم، برای انرژی و کاهش خستگی عضلات.
+        </p>
+
+        <h3>🍊 پرتقال</h3>
+        <p>
+            پرتقال تامسون شمال و جنوب، با پوست نازک و آبدار. مناسب برای آب‌گیری و مصرف روزانه. ویتامین C فراوان برای تقویت سیستم ایمنی بدن. در فصل سرما تقاضای بالا دارد.
+        </p>
+
+        <h3>🍇 انگور</h3>
+        <p>
+            انگور عسگری و بی‌دانه، مناسب برای مصرف تازه، آب‌گیری، و صادرات. شیرین و بدون هسته، بسیار محبوب در بازارهای داخلی و خارجی. آنتی‌اکسیدان بالا، ضدسرطان.
+        </p>
+
+        <h3>🍓 توت‌فرنگی</h3>
+        <p>
+            توت‌فرنگی‌های خوش‌رنگ و خوش‌عطر از استان کردستان و کرج، بسته‌بندی شده و آماده فروش. برای شیرینی‌پزی، دسر و فروش لوکس در سوپرمارکت‌ها.
+        </p>
+
+        <h3>🛒 فروش عمده</h3>
+        <p>
+            تمام محصولات به صورت عمده با بارگیری سریع، بارنامه رسمی، و ارسال به تمام نقاط ایران عرضه می‌شود. می‌تونید از طریق واتساپ یا تلفن سفارش ثبت کنید.
+        </p>
+
+        <h3>🌍 صادرات</h3>
+        <p>
+            آماده همکاری با صادرکنندگان میوه به کشورهای حاشیه خلیج فارس، روسیه، و عراق. بسته‌بندی با استاندارد صادراتی، کنترل کیفیت قبل از ارسال، و همکاری با شرکت‌های حمل‌ونقل بین‌المللی.
+        </p>
+		
+			<button class="btn btn-danger" type="button">ورود به سایت دیگر</button>
+		</a> 
+    </section>
+    <footer>
+      <p>
+            حاج عبدالرضا
+                            شماره:09133126271
+                                                     آدرس:میدون تره بار مرکزی اصفهان تالار5 غرفه 8
+      </p>
+    </footer>
+</body>
+</html> 
